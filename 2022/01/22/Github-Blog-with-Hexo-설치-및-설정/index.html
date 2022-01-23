@@ -289,7 +289,7 @@
 <h3 id="Hexo를-선택한-이유"><a href="#Hexo를-선택한-이유" class="headerlink" title="Hexo를 선택한 이유"></a>Hexo를 선택한 이유</h3><p>가장 많이 사용되고 있는<code>Jekyll</code>가 있는데 왜 <code>Hexo</code>를 선택했나?<br><strong>Jekyll</strong>는 <code>Ruby</code>를 사용하고 있지만 <strong>Hexo</strong>는 <code>Node.js</code>를 사용합니다.<br>제가 지금 Node.js를 공부하고 있어 익숙한 언어여서 더 끌렸던 것 같네요.<br>테마는 <a target="_blank" rel="noopener" href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak">tranquilpeak</a> 를 사용하겠습니다.</p>
 <h2 id="Hexo-설치-및-Tranquilpeak-테마-적용"><a href="#Hexo-설치-및-Tranquilpeak-테마-적용" class="headerlink" title="Hexo 설치 및 Tranquilpeak 테마 적용"></a>Hexo 설치 및 Tranquilpeak 테마 적용</h2><p>모든 내용은 <a target="_blank" rel="noopener" href="https://hexo.io/ko/">Hexo</a>에 나와 있습니다.  </p>
 <p>*<em>Git과 Node.js는 설치되어 있다고 가정하겠습니다.</em></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 아래의 명령으로 hexo-cli를 전역으로 설치해줍시다.</span><br><span class="line">$ npm install hexo-cli -g </span><br><span class="line"></span><br><span class="line"># 아래 명령으로 hexo를 생성합니다.</span><br><span class="line">$ hexo init &lt;directory&gt;</span><br><span class="line">$ cd &lt;directory&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 아래의 명령으로 hexo-cli를 전역으로 설치해줍시다.</span></span><br><span class="line"><span class="variable">$</span> npm install hexo<span class="literal">-cli</span> <span class="literal">-g</span> </span><br><span class="line"></span><br><span class="line"><span class="comment"># 아래 명령으로 hexo를 생성합니다.</span></span><br><span class="line"><span class="variable">$</span> hexo init &lt;directory&gt;</span><br><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> &lt;directory&gt;</span><br><span class="line"><span class="variable">$</span> npm install</span><br></pre></td></tr></table></figure>
 
 <p><code>Hexo</code>설치를 성공적으로 마치셨나요?<br>이제는 <a target="_blank" rel="noopener" href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/releases">Tranquilpeak</a>에서 최신 버전을 설치해 주세요!<br>Tranquilpeak를 적용하기 전 먼저 해주셔야 하는 것이 있는데요.  </p>
 <ol>
@@ -351,7 +351,7 @@
 
 <p>제가 입력한 값들 입니다. <a target="_blank" rel="noopener" href="https://hexo.io/ko/docs/configuration">참고 문서</a>를 참고하시면 좋을 것 같습니다.</p>
 <p>다음은 테마의 설정입니다. 필요하신 부분만 변경하시면 될 것 같네요.</p>
-<figure class="highlight plaintext"><figcaption><span>themes/tranquilpeak/_config.yml yaml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sidebar:</span><br><span class="line">    menu:</span><br><span class="line">        home:</span><br><span class="line">            title: global.home</span><br><span class="line">            url: /</span><br><span class="line">            icon: fa fa-home</span><br><span class="line">    # ... 필요한 것들만 활성화</span><br></pre></td></tr></table></figure>
+<figure class="highlight dts"><figcaption><span>themes/tranquilpeak/_config.yml yaml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">sidebar:</span></span><br><span class="line"><span class="symbol">    menu:</span></span><br><span class="line"><span class="symbol">        home:</span></span><br><span class="line"><span class="symbol">            title:</span> global.home</span><br><span class="line"><span class="symbol">            url:</span> /</span><br><span class="line"><span class="symbol">            icon:</span> fa fa-home</span><br><span class="line">    <span class="meta"># ... 필요한 것들만 활성화</span></span><br></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/DOCUMENTATION.md">tranquilpeak 문서</a></p>
 <h2 id="마치며"><a href="#마치며" class="headerlink" title="마치며"></a>마치며</h2><p>블로그를 미루다 이제서야 만들기 시작하는데 <code>Markdown</code>으로 글 써보는 것도 처음이라 많이 어려웠네요..<br>다음에는 글쓰는 방법을 포스팅 하겠습니다.</p>
             
@@ -374,11 +374,14 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2022/01/22/Github-Blog-with-Hexo-%EA%B8%80%EC%93%B0%EA%B8%B0/"
+                    data-tooltip="Github Blog with Hexo - 글쓰기"
+                    aria-label="PREVIOUS: Github Blog with Hexo - 글쓰기"
+                >
+                    
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
@@ -486,11 +489,14 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a
-                        class="post-action-btn btn btn--disabled"
-                        aria-hidden="true"
-                    >
-                        
+                    
+                <a
+                    class="post-action-btn btn btn--default tooltip--top"
+                    href="/2022/01/22/Github-Blog-with-Hexo-%EA%B8%80%EC%93%B0%EA%B8%B0/"
+                    data-tooltip="Github Blog with Hexo - 글쓰기"
+                    aria-label="PREVIOUS: Github Blog with Hexo - 글쓰기"
+                >
+                    
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
                     </a>
